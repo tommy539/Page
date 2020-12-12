@@ -59,9 +59,10 @@ body {font-family: Arial;}
 <body>
       <h1>Working Hours Checker</h1>
     <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'Dashboard')">Dashboard</button>
         <button class="tablinks" onclick="openCity(event, 'Checker')">Checker</button>
         <button class="tablinks" onclick="openCity(event, 'Check-list')">Check-list</button>
-        <button class="tablinks" onclick="openCity(event, 'Dashboard')">Dashboard</button>
+        
     </div>
 
 <!-- Tab content -->
@@ -171,7 +172,7 @@ body {font-family: Arial;}
           var i, tabcontent, tablinks;
           tabcontent = document.getElementsByClassName("tabcontent");
           for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
+            tabcontent[i].style.display = "active";
           }
           tablinks = document.getElementsByClassName("tablinks");
           for (i = 0; i < tablinks.length; i++) {
